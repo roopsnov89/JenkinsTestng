@@ -2,18 +2,30 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite-1" duration-ms="23" started-at="2014-11-07T10:28:13Z" finished-at="2014-11-07T10:28:13Z">
+  <suite name="Suite-1" duration-ms="2084" started-at="2014-11-07T10:40:38Z" finished-at="2014-11-07T10:40:40Z">
     <groups>
     </groups>
-    <test name="class-1" duration-ms="23" started-at="2014-11-07T10:28:13Z" finished-at="2014-11-07T10:28:13Z">
+    <test name="class-1" duration-ms="2084" started-at="2014-11-07T10:40:38Z" finished-at="2014-11-07T10:40:40Z">
       <class name="com.company.testclasses.Branch1">
-        <test-method status="PASS" signature="Test1()[pri:0, instance:com.company.testclasses.Branch1@2353f67e]" name="Test1" duration-ms="0" started-at="2014-11-07T15:58:13Z" finished-at="2014-11-07T15:58:13Z">
+        <test-method status="PASS" signature="bn(java.lang.String, java.lang.String)[pri:0, instance:com.company.testclasses.Branch1@2353f67e]" name="bn" duration-ms="2060" started-at="2014-11-07T16:10:38Z" finished-at="2014-11-07T16:10:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver.chrome.driver]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[F:/Selenium/chromedriver_win32/chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test1 -->
+        </test-method> <!-- bn -->
       </class> <!-- com.company.testclasses.Branch1 -->
       <class name="com.company.testclasses.GoogleTest">
-        <test-method status="PASS" signature="Test1()[pri:0, instance:com.company.testclasses.GoogleTest@2c79a2e7]" name="Test1" duration-ms="10" started-at="2014-11-07T15:58:13Z" finished-at="2014-11-07T15:58:13Z">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:com.company.testclasses.GoogleTest@105e55ab]" name="Test1" duration-ms="10" started-at="2014-11-07T16:10:38Z" finished-at="2014-11-07T16:10:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->

@@ -106,7 +106,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite-1" title="com.company.testclasses.Branch1" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite-1" title="com.company.testclasses.Branch1" hash-for-method="bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)">bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite-1 -->
@@ -124,7 +124,7 @@
           <div class="suite-Suite-1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.company.testclasses.Branch1</span>
+              <span class="class-name">com.company.testclasses.GoogleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -139,14 +139,15 @@
           <div class="suite-Suite-1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.company.testclasses.GoogleTest</span>
+              <span class="class-name">com.company.testclasses.Branch1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
+                  <a name="bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)">
+                  </a> <!-- bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe) -->
+                  <span class="method-name">bn</span>
+                  <span class="parameters">(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,8 +163,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite-1&quot;&gt;
   &lt;test name=&quot;class-1&quot;&gt;
-    &lt;parameter name=&quot;Browser2&quot; value=&quot;Chrome&quot;/&gt;
-    &lt;parameter name=&quot;Browser1&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;parameter name=&quot;name&quot; value=&quot;webdriver.chrome.driver&quot;/&gt;
+    &lt;parameter name=&quot;path&quot; value=&quot;F:/Selenium/chromedriver_win32/chromedriver.exe&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.company.testclasses.GoogleTest&quot;/&gt;
       &lt;class name=&quot;com.company.testclasses.Branch1&quot;/&gt;
@@ -208,18 +209,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test1')
-data.setCell(0, 2, 'com.company.testclasses.GoogleTest')
-data.setCell(0, 3, 10);
+data.setCell(0, 1, 'bn')
+data.setCell(0, 2, 'com.company.testclasses.Branch1')
+data.setCell(0, 3, 2060);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Test1')
-data.setCell(1, 2, 'com.company.testclasses.Branch1')
-data.setCell(1, 3, 0);
+data.setCell(1, 2, 'com.company.testclasses.GoogleTest')
+data.setCell(1, 3, 10);
 window.suiteTableData['Suite-1']= { tableData: data, tableDiv: 'times-div-Suite-1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite-1">
               </div> <!-- times-div-Suite-1 -->
             </div> <!-- times-div -->
@@ -254,7 +255,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.company.testclasses.Branch1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Test1</span>
+                <span class="method-name">bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)</span>
                 <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
