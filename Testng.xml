@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite-1">
 <test name="class-1">
-<parameter name="name" value="webdriver.chrome.driver"/>
-<parameter name="path" value="F:/Selenium/chromedriver_win32/chromedriver.exe"/>
+<parameter name = "browser" value ="firefox"></parameter>
 <classes>
 <class name="com.company.testclasses.GoogleTest"></class>
 <class name="com.company.testclasses.Branch1"></class>
