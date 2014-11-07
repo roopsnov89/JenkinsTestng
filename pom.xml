@@ -37,7 +37,7 @@
 
 	<profiles>
 		<profile>
-			<id>testng</id>
+			<id>testng1</id>
 			<build>
 				<plugins>
 					<plugin>
