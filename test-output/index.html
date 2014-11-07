@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite-1">
-              <span class="suite-name border-passed">Suite-1</span>
+              <span class="suite-name border-failed">Suite-1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite-1" class="hide-methods failed suite-Suite-1"> (hide)</a> <!-- hide-methods failed suite-Suite-1 -->
+                      <a href="#" panel-name="suite-Suite-1" class="show-methods failed suite-Suite-1"> (show)</a> <!-- show-methods failed suite-Suite-1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite-1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite-1" title="com.company.testclasses.GoogleTest" hash-for-method="firefox">firefox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite-1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,12 +115,12 @@
                     <div class="method-list-content passed suite-Suite-1">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite-1" title="com.company.testclasses.GoogleTest" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite-1" title="com.company.testclasses.Branch1" hash-for-method="bn">bn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite-1" title="com.company.testclasses.Branch1" hash-for-method="bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)">bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite-1" title="com.company.testclasses.GoogleTest" hash-for-method="chrome">chrome</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite-1 -->
@@ -121,21 +135,53 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite-1" class="panel Suite-1">
-          <div class="suite-Suite-1-class-passed">
+          <div class="suite-Suite-1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.company.testclasses.GoogleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
+                  <a name="firefox">
+                  </a> <!-- firefox -->
+                  <span class="method-name">firefox</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 213 milliseconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;NODE140&apos;, ip: &apos;192.168.1.33&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Session ID: a91e1129-c781-4982-b939-ac61ab7630e6
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=27.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.company.testclasses.GoogleTest.firefox(GoogleTest.java:36)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;NODE140&apos;, ip: &apos;192.168.1.33&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.6.0_43&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11525)
+	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8287)
+	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8433)
+	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8380)
+	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:11310)
+	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/Admin/AppData/Local/Temp/anonymous7480639045815527183webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-1-class-passed -->
+          </div> <!-- suite-Suite-1-class-failed -->
           <div class="suite-Suite-1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -144,10 +190,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)">
-                  </a> <!-- bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe) -->
+                  <a name="bn">
+                  </a> <!-- bn -->
                   <span class="method-name">bn</span>
-                  <span class="parameters">(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-1-class-passed -->
+          <div class="suite-Suite-1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.company.testclasses.GoogleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="chrome">
+                  </a> <!-- chrome -->
+                  <span class="method-name">chrome</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,8 +223,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite-1&quot;&gt;
   &lt;test name=&quot;class-1&quot;&gt;
-    &lt;parameter name=&quot;name&quot; value=&quot;webdriver.chrome.driver&quot;/&gt;
-    &lt;parameter name=&quot;path&quot; value=&quot;F:/Selenium/chromedriver_win32/chromedriver.exe&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.company.testclasses.GoogleTest&quot;/&gt;
       &lt;class name=&quot;com.company.testclasses.Branch1&quot;/&gt;
@@ -207,20 +266,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bn')
-data.setCell(0, 2, 'com.company.testclasses.Branch1')
-data.setCell(0, 3, 2060);
+data.setCell(0, 1, 'firefox')
+data.setCell(0, 2, 'com.company.testclasses.GoogleTest')
+data.setCell(0, 3, 8251);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Test1')
+data.setCell(1, 1, 'chrome')
 data.setCell(1, 2, 'com.company.testclasses.GoogleTest')
-data.setCell(1, 3, 10);
+data.setCell(1, 3, 7901);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'bn')
+data.setCell(2, 2, 'com.company.testclasses.Branch1')
+data.setCell(2, 3, 2);
 window.suiteTableData['Suite-1']= { tableData: data, tableDiv: 'times-div-Suite-1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite-1">
               </div> <!-- times-div-Suite-1 -->
             </div> <!-- times-div -->
@@ -247,17 +310,36 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.company.testclasses.GoogleTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Test1</span>
+              <div class="configuration-test before">
+                <span class="method-name">Test1(firefox)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">chrome</span>
+                <span class="method-start">14739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">firefox</span>
+                <span class="method-start">22641 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.company.testclasses.Branch1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">bn(webdriver.chrome.driver, F:/Selenium/chromedriver_win32/chromedriver.exe)</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-name">bn</span>
+                <span class="method-start">30918 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.company.testclasses.GoogleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">at</span>
+                <span class="method-start">30920 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
