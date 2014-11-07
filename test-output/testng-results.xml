@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite-1" duration-ms="20" started-at="2014-11-07T08:12:17Z" finished-at="2014-11-07T08:12:17Z">
+  <suite name="Suite-1" duration-ms="26817" started-at="2014-11-07T09:46:03Z" finished-at="2014-11-07T09:46:29Z">
     <groups>
     </groups>
-    <test name="class-1" duration-ms="20" started-at="2014-11-07T08:12:17Z" finished-at="2014-11-07T08:12:17Z">
+    <test name="class-1" duration-ms="26817" started-at="2014-11-07T09:46:03Z" finished-at="2014-11-07T09:46:29Z">
       <class name="com.company.testclasses.Branch1">
-        <test-method status="PASS" signature="Branch()[pri:0, instance:com.company.testclasses.Branch1@1055e55f]" name="Branch" duration-ms="0" started-at="2014-11-07T13:42:17Z" finished-at="2014-11-07T13:42:17Z">
+        <test-method status="PASS" signature="bt()[pri:0, instance:com.company.testclasses.Branch1@7745c859]" name="bt" is-config="true" duration-ms="2934" started-at="2014-11-07T15:16:03Z" finished-at="2014-11-07T15:16:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Branch -->
+        </test-method> <!-- bt -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.company.testclasses.GoogleTest@45db05b2]" name="before" is-config="true" duration-ms="10156" started-at="2014-11-07T15:16:06Z" finished-at="2014-11-07T15:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="t()[pri:0, instance:com.company.testclasses.Branch1@7745c859]" name="t" duration-ms="5642" started-at="2014-11-07T15:16:22Z" finished-at="2014-11-07T15:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t -->
+        <test-method status="PASS" signature="at()[pri:0, instance:com.company.testclasses.Branch1@7745c859]" name="at" is-config="true" duration-ms="1300" started-at="2014-11-07T15:16:28Z" finished-at="2014-11-07T15:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+        <test-method status="PASS" signature="at()[pri:0, instance:com.company.testclasses.GoogleTest@45db05b2]" name="at" is-config="true" duration-ms="251" started-at="2014-11-07T15:16:29Z" finished-at="2014-11-07T15:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
       </class> <!-- com.company.testclasses.Branch1 -->
       <class name="com.company.testclasses.GoogleTest">
-        <test-method status="PASS" signature="New()[pri:0, instance:com.company.testclasses.GoogleTest@7e78fc6]" name="New" duration-ms="0" started-at="2014-11-07T13:42:17Z" finished-at="2014-11-07T13:42:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- New -->
-        <test-method status="PASS" signature="Test()[pri:0, instance:com.company.testclasses.GoogleTest@7e78fc6]" name="Test" duration-ms="0" started-at="2014-11-07T13:42:17Z" finished-at="2014-11-07T13:42:17Z">
+        <test-method status="PASS" signature="Test()[pri:0, instance:com.company.testclasses.GoogleTest@45db05b2]" name="Test" duration-ms="6517" started-at="2014-11-07T15:16:16Z" finished-at="2014-11-07T15:16:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
